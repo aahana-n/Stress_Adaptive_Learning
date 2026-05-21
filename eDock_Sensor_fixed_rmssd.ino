@@ -49,7 +49,11 @@
 // ======================================================
 // WIFI / FIREBASE CONFIG
 // ======================================================
-
+#define WIFI_SSID      ""
+#define WIFI_PASSWORD  ""
+#define DATABASE_URL   ""
+#define DATABASE_SECRET ""
+String userUID = "";
 
 // ======================================================
 // HARDWARE PINS
