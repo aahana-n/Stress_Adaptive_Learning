@@ -32,6 +32,7 @@ to optimize user engagement and performance.
 🚀 Key Features
 
 1. 🧬 Realtime Physiological Monitoring
+   
 The system continuously acquires and visualizes physiological data including EEG Signals. Using the BioAmp EXG Pill, the platform captures EEG activity and computes:
 
 -Alpha band power
@@ -53,6 +54,7 @@ These metrics are used to infer:
 -focus intensity
 
 2. 🧠 Intelligent Stress Detection Engine
+   
 The stress classification engine combines:
 
 -HRV RMSSD
@@ -64,6 +66,7 @@ to dynamically classify users into Low/Moderate/High Stress
 The system uses threshold-based multimodal physiological fusion for realtime cognitive-state estimation.
 
 3. 🤖 AI-Based Adaptive Question Generation
+   
 
 The platform integrates AI-generated MCQs using the OpenAI API.
 
@@ -88,6 +91,7 @@ This prevents:
 while maintaining engagement.
 
 4. 📚 Subject-Adaptive Learning
+   
 Before beginning the assessment, users select from JEE/NEET/COMEDK/KCET
 
 After an initial calibration quiz, subject-specific adaptive assessments are generated dynamically.
@@ -100,6 +104,7 @@ Supported subject flows include:
 -Biology
 
 5. 🧠 Cognitive Calibration System
+   
 The platform includes a preliminary calibration assessment to estimate:
 
 -baseline cognitive ability
@@ -109,6 +114,7 @@ The platform includes a preliminary calibration assessment to estimate:
 This enables more personalized adaptive difficulty scaling during the session.
 
 6. 📊 Advanced Analytics Dashboard
+   
 The web dashboard provides realtime visualization of:
 
 -Heart Rate
@@ -123,6 +129,7 @@ The web dashboard provides realtime visualization of:
 Interactive graphs continuously update using live physiological data streams.
 
 7. 📈 Historical Session Review
+   
 Users can review previous sessions including:
 
 -stress patterns
@@ -134,6 +141,7 @@ Users can review previous sessions including:
 This allows long-term cognitive and performance tracking.
 
 8. 💾 Data Export System
+   
 The platform supports downloadable JSON logs and CSV datasets containing:
 
 -physiological data
@@ -149,6 +157,7 @@ These exports enable:
 -machine learning dataset generation
 
 9. 📡 Wireless Embedded Hardware Architecture
+    
 The wearable prototype is built using:
 
 -ESP32-C3 SuperMini
@@ -160,6 +169,7 @@ The wearable prototype is built using:
 The ESP32 performs sensor acquisition, wireless transmission and realtime streaming to the web dashboard.
 
 10. 🌐 Realtime Web-Based Interface
+    
 The frontend dashboard provides:
 
 -live physiological monitoring
