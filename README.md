@@ -5,246 +5,181 @@ The Stress-Adaptive Learning System is an AI-driven neurophysiological learning 
 
 The system integrates:
 
-EEG-based brain activity monitoring
-Heart rate and HRV analysis
-AI-generated adaptive assessments
-Performance analytics
-Realtime physiological visualization
+-EEG-based brain activity monitoring
+-Heart rate and HRV analysis
+-AI-generated adaptive assessments
+-Performance analytics
+-Realtime physiological visualization
 
 to create a personalized and cognitively-aware learning experience.
-
 Unlike conventional adaptive learning systems that rely only on answer correctness, this platform continuously analyzes physiological indicators such as:
 
-EEG Beta/Alpha ratio
-HRV RMSSD
-Heart Rate trends
-Response performance
+-EEG Beta/Alpha ratio
+-HRV RMSSD
+-Heart Rate trends
+-Response performance
 
 to estimate stress and cognitive load in realtime.
 
 The system then intelligently modifies:
 
-question difficulty
-assessment pacing
-learning complexity
+-question difficulty
+-assessment pacing
+-learning complexity
 
 to optimize user engagement and performance.
 
 🚀 Key Features
-🧬 Realtime Physiological Monitoring
 
-The system continuously acquires and visualizes physiological data including:
+1. 🧬 Realtime Physiological Monitoring
+The system continuously acquires and visualizes physiological data including EEG Signals. Using the BioAmp EXG Pill, the platform captures EEG activity and computes:
 
-EEG Signals
-
-Using the BioAmp EXG Pill, the platform captures EEG activity and computes:
-
-Alpha band power
-Beta band power
-Theta band power
-Beta/Alpha ratio (BAR)
-Cardiovascular Metrics
+-Alpha band power
+-Beta band power
+-Theta band power
+-Beta/Alpha ratio (BAR)
+-Cardiovascular Metrics
 
 Using the MAX30102 PPG sensor, the system measures:
 
-Heart Rate (BPM)
-HRV RMSSD
+-Heart Rate (BPM)
+-HRV RMSSD
 
 These metrics are used to infer:
 
-cognitive load
-stress level
-relaxation state
-focus intensity
-🧠 Intelligent Stress Detection Engine
+-cognitive load
+-stress level
+-relaxation state
+-focus intensity
 
+2. 🧠 Intelligent Stress Detection Engine
 The stress classification engine combines:
 
-HRV RMSSD
-Heart Rate
-EEG Beta/Alpha ratio
+-HRV RMSSD
+-Heart Rate
+-EEG Beta/Alpha ratio
 
-to dynamically classify users into:
-
-Low Stress
-Moderate Stress
-High Stress
+to dynamically classify users into Low/Moderate/High Stress
 
 The system uses threshold-based multimodal physiological fusion for realtime cognitive-state estimation.
 
-🤖 AI-Based Adaptive Question Generation
+3. 🤖 AI-Based Adaptive Question Generation
 
 The platform integrates AI-generated MCQs using the OpenAI API.
 
 Question difficulty adapts dynamically based on:
 
-physiological stress
-user performance
-calibration assessment
-subject selection
-Difficulty Mapping
-Stress Level	Generated Questions
-Low Stress	Hard / Challenging
-Moderate Stress	Intermediate
-High Stress	Easier Conceptual Questions
+-physiological stress
+-user performance
+-calibration assessment
+-subject selection
+-Difficulty Mapping
+-Stress Level	Generated Questions
+-Low Stress	Hard / Challenging
+-Moderate Stress	Intermediate
+-High Stress	Easier Conceptual Questions
 
 This prevents:
 
-cognitive overload
-learner fatigue
-excessive frustration
+-cognitive overload
+-learner fatigue
+-excessive frustration
 
 while maintaining engagement.
 
-📚 Subject-Adaptive Learning
-
-Before beginning the assessment, users select:
-
-JEE
-NEET
-KCET
-COMEDK
+4. 📚 Subject-Adaptive Learning
+Before beginning the assessment, users select from JEE/NEET/COMEDK/KCET
 
 After an initial calibration quiz, subject-specific adaptive assessments are generated dynamically.
 
 Supported subject flows include:
 
-Physics
-Chemistry
-Mathematics
-Biology
-🧠 Cognitive Calibration System
+-Physics
+-Chemistry
+-Mathematics
+-Biology
 
+5. 🧠 Cognitive Calibration System
 The platform includes a preliminary calibration assessment to estimate:
 
-baseline cognitive ability
-response behavior
-performance consistency
+-baseline cognitive ability
+-response behavior
+-performance consistency
 
 This enables more personalized adaptive difficulty scaling during the session.
 
-📊 Advanced Analytics Dashboard
-
+6. 📊 Advanced Analytics Dashboard
 The web dashboard provides realtime visualization of:
 
-Heart Rate
-HRV RMSSD
-EEG Beta/Alpha Ratio
-EEG Band Powers
-Stress Level
-Accuracy
-Streak
-Session Time
+-Heart Rate
+-HRV RMSSD
+-EEG Beta/Alpha Ratio
+-EEG Band Powers
+-Stress Level
+-Accuracy
+-Streak
+-Session Time
 
 Interactive graphs continuously update using live physiological data streams.
 
-📈 Historical Session Review
-
+7. 📈 Historical Session Review
 Users can review previous sessions including:
 
-stress patterns
-physiological trends
-performance history
-answered questions
-accuracy metrics
+-stress patterns
+-physiological trends
+-performance history
+-answered questions
+-accuracy metrics
 
 This allows long-term cognitive and performance tracking.
 
-💾 Data Export System
+8. 💾 Data Export System
+The platform supports downloadable JSON logs and CSV datasets containing:
 
-The platform supports downloadable:
-
-JSON logs
-CSV datasets
-
-containing:
-
-physiological data
-question history
-stress labels
-timestamps
-performance metrics
+-physiological data
+-question history
+-stress labels
+-timestamps
+-performance metrics
 
 These exports enable:
 
-research analysis
-external visualization
-machine learning dataset generation
-📡 Wireless Embedded Hardware Architecture
+-research analysis
+-external visualization
+-machine learning dataset generation
 
+9. 📡 Wireless Embedded Hardware Architecture
 The wearable prototype is built using:
 
-ESP32-C3 SuperMini
-BioAmp EXG Pill
-MAX30102
-Gel EEG Electrodes
-5V Power Bank
+-ESP32-C3 SuperMini
+-BioAmp EXG Pill
+-MAX30102
+-Gel EEG Electrodes
+-5V Power Bank
 
-The ESP32 performs:
+The ESP32 performs sensor acquisition, wireless transmission and realtime streaming to the web dashboard.
 
-sensor acquisition
-wireless transmission
-realtime streaming
-
-to the web dashboard.
-
-🌐 Realtime Web-Based Interface
-
+10. 🌐 Realtime Web-Based Interface
 The frontend dashboard provides:
 
-live physiological monitoring
-adaptive assessments
-realtime graph updates
-AI-generated MCQs
-session analytics
+-live physiological monitoring
+-adaptive assessments
+-realtime graph updates
+-AI-generated MCQs
+-session analytics
 
 through a browser-based interface.
 
-🧪 Technologies Used
-Hardware
-ESP32-C3 SuperMini
-BioAmp EXG Pill
-MAX30102
-EEG Gel Electrodes
-Software
-Python
-Flask
-HTML/CSS/JavaScript
-OpenAI API
-Data Processing
-HRV RMSSD computation
-EEG band power analysis
-Beta/Alpha ratio calculation
-Stress threshold logic
-🔥 Novelty of the Project
 
 The uniqueness of this project lies in its integration of:
 
-wearable biosignal acquisition
-AI-driven adaptive learning
-cognitive-state awareness
-realtime physiological analytics
+-wearable biosignal acquisition
+-AI-driven adaptive learning
+-cognitive-state awareness
+-realtime physiological analytics
 
 into a single closed-loop adaptive educational platform.
 
 Unlike traditional e-learning systems, the platform does not rely solely on answer correctness but also incorporates physiological state into learning adaptation.
 
-🎯 Applications
-Adaptive EdTech Platforms
-Cognitive Performance Monitoring
-Neuroadaptive Learning Systems
-Stress-Aware Training Platforms
-Human-Centered AI Systems
-Educational Research
-Cognitive Analytics
-🔮 Future Scope
 
-Future enhancements may include:
-
-Machine learning-based stress prediction
-Personalized cognitive profiling
-Cloud analytics using Firebase
-Multimodal attention tracking
-Neuroadaptive accessibility systems
-Fatigue prediction
-Gamified adaptive learning
